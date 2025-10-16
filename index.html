@@ -5,29 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Produtos — Economia & Finanças Insight</title>
   <meta name="description" content="Planilhas, e-books e cursos práticos para sair das dívidas, organizar seu orçamento e gerar renda extra.">
-  <meta property="og:title" content="Economia & Finanças Insight — Produtos" />
-  <meta property="og:description" content="Material prático para sair das dívidas, planilhas e cursos testados. Confira as ofertas e comece hoje." />
   <meta name="theme-color" content="#FF7A00" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --orange:#FF7A00;
-      --black:#000;
-      --muted:#c9c9c9;
-      --white:#ffffff;
-      --card: rgba(255,255,255,0.04);
-      --radius:12px;
-      --maxw:1100px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background: linear-gradient(180deg, #FF7A00 0%, #000000 72%);
-      color:var(--white);
-      -webkit-font-smoothing:antialiased;
-      line-height:1.5;
-    }
+    :root{--orange:#FF7A00;--muted:#c9c9c9;--white:#fff;--card: rgba(255,255,255,0.04);--radius:12px;--maxw:1100px;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#FF7A00 0%,#000 72%);color:var(--white);-webkit-font-smoothing:antialiased}
     .wrap{max-width:var(--maxw);margin:20px auto;padding:20px}
     header{display:flex;gap:16px;align-items:center;padding:12px;border-radius:12px;background:rgba(0,0,0,0.18)}
     .logo{width:84px;height:84px;border-radius:12px;overflow:hidden;border:2px solid rgba(255,255,255,0.06)}
@@ -48,15 +30,18 @@
     .testimonial{display:flex;gap:12px;align-items:center}
     .testimonial img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.06)}
     footer{margin-top:26px;text-align:center;color:var(--muted);font-size:14px}
-    a { color: inherit }
+    a{color:inherit}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="logo"><img src="/assets/logo.png" alt="Economia & Finanças Insight - logo"></div>
+      <div class="logo">
+        <!-- LOGO embutida (data URI) -->
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...REPLACE_WITH_FULL_BASE64_FOR_LOGO..." alt="EFI Logo">
+      </div>
       <div>
-        <h1>Economia & Finanças Insight</h1>
+        <h1>Economia &amp; Finanças Insight</h1>
         <p class="muted">Materiais práticos para sair das dívidas, organizar seu orçamento e gerar renda extra.</p>
         <div style="margin-top:6px;font-weight:700;color:var(--orange)">Por: Francisco Neves — Tecnólogo em Gestão Financeira</div>
       </div>
@@ -66,9 +51,8 @@
       <div>
         <h2 style="margin:0 0 6px 0;font-family:'Playfair Display',serif">Seu controle financeiro começa aqui. Saia das dívidas.</h2>
         <p class="muted">Planilhas, ebooks e cursos com passos práticos e testados — ação imediata e suporte em grupo fechado. Garantia de 7 dias.</p>
-
         <div style="margin-top:14px">
-          <a class="btn primary" href="https://go.hotmart.com/U101462649K" target="_blank">Baixar Planilha — R$19</a>
+          <a class="btn primary" href="https://go.hotmart.com/U101462649K" target="_blank" rel="noopener">Baixar Planilha — R$19</a>
           <a class="btn ghost" href="#produtos" style="margin-left:8px">Ver produtos</a>
         </div>
 
@@ -90,7 +74,8 @@
       </div>
 
       <aside style="background:rgba(0,0,0,0.12);padding:14px;border-radius:10px">
-        <img src="/assets/hero-cover.png" alt="capa" style="width:100%;height:160px;object-fit:cover;border-radius:10px">
+        <!-- HERO image embutida -->
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...REPLACE_WITH_FULL_BASE64_FOR_HERO..." alt="capa" style="width:100%;height:160px;object-fit:cover;border-radius:10px">
         <h4 style="color:var(--orange);margin-top:12px">Nossa Abordagem</h4>
         <p class="muted">Ações simples, passo-a-passo e suporte. Comece com pequenas vitórias financeiras.</p>
       </aside>
@@ -98,7 +83,8 @@
 
     <section class="section" style="margin-top:20px">
       <div style="display:flex;gap:18px;align-items:center">
-        <img src="/assets/minha_foto.png" alt="foto fundador" style="width:120px;height:120px;border-radius:12px;object-fit:cover;border:4px solid rgba(255,255,255,0.06)">
+        <!-- Foto do fundador embutida -->
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...REPLACE_WITH_FULL_BASE64_FOR_FOUNDER..." alt="foto fundador" style="width:120px;height:120px;border-radius:12px;object-fit:cover;border:4px solid rgba(255,255,255,0.06)">
         <div>
           <h3 style="margin:0;color:var(--orange)">Francisco Neves — sua jornada para liberdade financeira</h3>
           <p class="muted" style="max-width:760px">Sou tecnólogo em Gestão Financeira (Estácio de Sá). Criei materiais práticos e fáceis de aplicar para ajudar quem está endividado a ganhar controle e construir reservas. Trabalho de forma direta, com foco em resultados e cuidado com a sua saúde financeira e mental.</p>
@@ -109,9 +95,9 @@
     <section id="produtos" class="section">
       <h2 style="font-family:'Playfair Display',serif">Produtos em destaque</h2>
       <div class="grid" style="margin-top:12px">
-        <!-- Produto 1 (seu) -->
+        <!-- Planilha (seu produto) -->
         <div class="card">
-          <div class="product-img"><img src="/assets/product_planilha.png" alt="Planilha mensal"></div>
+          <div class="product-img"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...REPLACE_WITH_FULL_BASE64_PRODUCT_PLANILHA..." alt="Planilha mensal"></div>
           <div style="margin-bottom:6px"><strong style="background:var(--orange);color:#000;padding:6px 10px;border-radius:20px;font-weight:800">Autor</strong></div>
           <h3>Planilha de Controle Financeiro Mensal</h3>
           <p class="muted">Controle receitas, despesas e parcelas — ponto de partida para recuperar o controle.</p>
@@ -119,9 +105,9 @@
           <div style="margin-top:8px"><a class="btn primary" href="https://go.hotmart.com/U101462649K" target="_blank">Baixar</a></div>
         </div>
 
-        <!-- Ebook (seu) -->
+        <!-- Ebook (seu produto) -->
         <div class="card">
-          <div class="product-img"><img src="/assets/product_ebook.png" alt="Como sair das dívidas"></div>
+          <div class="product-img"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...REPLACE_WITH_FULL_BASE64_PRODUCT_EBOOK..." alt="Como sair das dívidas"></div>
           <div style="margin-bottom:6px"><strong style="background:var(--orange);color:#000;padding:6px 10px;border-radius:20px;font-weight:800">Autor</strong></div>
           <h3>Como Sair das Dívidas em 6 Simples Passos</h3>
           <p class="muted">Guia prático com técnicas de negociação e planejamento.</p>
@@ -129,9 +115,9 @@
           <div style="margin-top:8px"><a class="btn primary" href="https://go.hotmart.com/B101486079V" target="_blank">Acessar</a></div>
         </div>
 
-        <!-- Curso (seu) -->
+        <!-- Curso (seu produto) -->
         <div class="card">
-          <div class="product-img"><img src="/assets/product_curso.png" alt="Princípios da Liberdade Financeira"></div>
+          <div class="product-img"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...REPLACE_WITH_FULL_BASE64_PRODUCT_CURSO..." alt="Princípios da Liberdade Financeira"></div>
           <div style="margin-bottom:6px"><strong style="background:var(--orange);color:#000;padding:6px 10px;border-radius:20px;font-weight:800">Autor</strong></div>
           <h3>Princípios da Liberdade Financeira</h3>
           <p class="muted">Curso/Guia avançado para formar hábitos e estratégias duradouras.</p>
@@ -141,7 +127,7 @@
 
         <!-- Afiliado (exemplo) -->
         <div class="card">
-          <div class="product-img"><img src="/assets/product_affiliado.png" alt="Afiliado"></div>
+          <div class="product-img"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...REPLACE_WITH_FULL_BASE64_PRODUCT_AFILIADO..." alt="Afiliado"></div>
           <div style="margin-bottom:6px"><strong style="background:#555;color:#fff;padding:6px 10px;border-radius:20px;font-weight:800">Afiliado</strong></div>
           <h3>Segredos dos Investimentos para Iniciantes</h3>
           <p class="muted">Curso passo a passo para começar a investir com segurança.</p>
@@ -149,7 +135,6 @@
         </div>
       </div>
 
-      <!-- lista resumida dos afiliados (links) -->
       <div style="margin-top:16px">
         <h4 style="margin-bottom:8px">Outros produtos recomendados</h4>
         <ul style="padding-left:18px;color:var(--muted)">
@@ -163,47 +148,23 @@
     <section class="section">
       <h2 style="font-family:'Playfair Display',serif">Depoimentos</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:10px">
-        <div class="card testimonial">
-          <img src="/assets/avatar_mariana.png" alt="Mariana">
-          <div>
-            <strong>Mariana, SP</strong>
-            <p class="muted" style="margin:6px 0 0">"Em 30 dias com a planilha e o ebook rescatei R$420 por mês e consegui negociar uma parcela."</p>
-          </div>
-        </div>
+        <div class="card testimonial"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...REPLACE_WITH_FULL_BASE64_AVATAR_MARIANA..." alt="Mariana"><div><strong>Mariana, SP</strong><p class="muted" style="margin:6px 0 0">"Em 30 dias com a planilha e o ebook rescatei R$420 por mês e consegui negociar uma parcela."</p></div></div>
 
-        <div class="card testimonial">
-          <img src="/assets/avatar_carlos.png" alt="Carlos">
-          <div>
-            <strong>Carlos, DF</strong>
-            <p class="muted" style="margin:6px 0 0">"Clareza total: o passo a passo funcionou. Hoje tenho rotina de controle."</p>
-          </div>
-        </div>
+        <div class="card testimonial"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...REPLACE_WITH_FULL_BASE64_AVATAR_CARLOS..." alt="Carlos"><div><strong>Carlos, DF</strong><p class="muted" style="margin:6px 0 0">"Clareza total: o passo a passo funcionou. Hoje tenho rotina de controle."</p></div></div>
 
-        <div class="card testimonial">
-          <img src="/assets/avatar_beatriz.png" alt="Beatriz">
-          <div>
-            <strong>Beatriz, RJ</strong>
-            <p class="muted" style="margin:6px 0 0">"Os materiais são objetivos. A planilha mostra onde cortar e acompanhar mês a mês."</p>
-          </div>
-        </div>
+        <div class="card testimonial"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...REPLACE_WITH_FULL_BASE64_AVATAR_BEATRIZ..." alt="Beatriz"><div><strong>Beatriz, RJ</strong><p class="muted" style="margin:6px 0 0">"Os materiais são objetivos. A planilha mostra onde cortar e acompanhar mês a mês."</p></div></div>
 
-        <div class="card testimonial">
-          <img src="/assets/avatar_rogerio.png" alt="Rogério">
-          <div>
-            <strong>Rogério, MG</strong>
-            <p class="muted" style="margin:6px 0 0">"Valeu cada centavo. Atendimento rápido quando precisei."</p>
-          </div>
-        </div>
+        <div class="card testimonial"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...REPLACE_WITH_FULL_BASE64_AVATAR_ROGERIO..." alt="Rogério"><div><strong>Rogério, MG</strong><p class="muted" style="margin:6px 0 0">"Valeu cada centavo. Atendimento rápido quando precisei."</p></div></div>
       </div>
     </section>
 
     <footer>
-      <p>© 2025 Economia & Finanças Insight — Suporte: <a href="mailto:econofin.insight@gmail.com" style="color:var(--orange)">econofin.insight@gmail.com</a></p>
+      <p>© 2025 Economia &amp; Finanças Insight — Suporte: <a href="mailto:econofin.insight@gmail.com" style="color:var(--orange)">econofin.insight@gmail.com</a></p>
       <p class="muted">Política de Privacidade: Ao enviar dados no formulário você aceita nossa <a href="#" id="policyFooter" style="color:var(--orange)">política</a>.</p>
     </footer>
   </div>
 
-  <!-- Modal (política / mensagens) -->
+  <!-- modal simples -->
   <div id="modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);align-items:center;justify-content:center">
     <div style="background:#111;padding:18px;border-radius:10px;max-width:720px;color:#fff" id="modalContent"></div>
   </div>
@@ -211,17 +172,13 @@
 <script>
 (function(){
   const webhook = 'https://hook.us2.make.com/6egvtn6fy8v44t30z76duenwjtk55psj';
-
   function openModal(html){ document.getElementById('modalContent').innerHTML = html; document.getElementById('modal').style.display = 'flex'; }
   function closeModal(){ document.getElementById('modal').style.display = 'none'; }
-
   document.getElementById('policyLink').addEventListener('click', function(e){ e.preventDefault();
     openModal('<h3 style="color:#FF7A00">Política de Privacidade</h3><p style="color:#ddd">Coletamos nome e e-mail para entregar materiais e enviar comunicações. Você pode solicitar remoção pelo e-mail econofin.insight@gmail.com.</p><div style="text-align:right"><button onclick="(function(){document.getElementById(\\'modal\\').style.display=\\'none\\'})()" class="btn primary" style="background:#FF7A00;color:#000;padding:8px 12px;border-radius:8px;border:none">Fechar</button></div>');
   });
-
   document.getElementById('policyFooter').addEventListener('click', function(e){ e.preventDefault(); document.getElementById('policyLink').click(); });
 
-  // Lead form
   const form = document.getElementById('leadForm');
   const submitBtn = document.getElementById('submitButton');
   form.addEventListener('submit', async function(e){
@@ -246,5 +203,6 @@
   });
 })();
 </script>
+
 </body>
 </html>
