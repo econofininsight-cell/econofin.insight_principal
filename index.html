@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produtos — Economia & Finanças Insight</title>
+  <meta name="description" content="Planilhas, e-books e cursos práticos para sair das dívidas, organizar o orçamento e gerar renda extra.">
+  <meta property="og:title" content="Economia & Finanças Insight — Produtos" />
+  <meta property="og:description" content="Material prático para sair das dívidas, planilhas e cursos testados. Confira as ofertas e comece hoje." />
+  <meta property="og:image" content="assets/hero1.jpg" />
+  <meta name="theme-color" content="#FF7A00" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    :root{
+      --orange:#FF7A00;
+      --black:#000000;
+      --dark:#0f0f0f;
+      --muted:#c1c1c1;
+      --card:#151515;
+      --white:#ffffff;
+      --radius:12px;
+      --maxw:1200px;
+      --glass: rgba(255,255,255,0.03);
+      font-family: 'Inter', sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(180deg, #0b0b0b 0%, #1a1a1a 100%);
+      color:var(--white);
+      line-height:1.6;
+      font-size:16px;
+    }
+    .wrap{max-width:var(--maxw);margin:20px auto;padding:18px}
+
+    /* header */
+    header{display:flex;align-items:center;gap:18px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+    .logo{width:76px;height:76px;border-radius:12px;overflow:hidden;flex:0 0 76px;background:#000;display:flex;align-items:center;justify-content:center}
+    .logo img{width:100%;height:100%;object-fit:cover;display:block}
+    header h1{margin:0;font-size:22px;color:var(--white);font-family:'Playfair Display', serif}
+    header p{margin:4px 0 0;color:var(--muted);font-size:13px}
+
+    /* author */
+    .author{display:flex;align-items:center;gap:12px;margin-top:10px}
+    .author img{width:64px;height:64px;border-radius:10px;object-fit:cover;border:3px solid var(--orange)}
+    .author .meta strong{color:var(--orange);display:block}
+    .author .meta small{color:var(--muted);display:block}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:28px;align-items:start}
+    @media(max-width:980px){.hero{grid-template-columns:1fr}}
+    .hero-left h2{font-family:'Playfair Display', serif;margin:0;font-size:38px;line-height:1.05;color:var(--white)}
+    .hero-left p.lead{color:var(--muted);margin:12px 0;font-size:17px;max-width:680px}
+    .cta-row{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--orange);color:#000;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-flex;align-items:center;gap:10px}
+    .btn.ghost{background:transparent;border:2px solid rgba(255,255,255,0.08);color:var(--white);padding:10px 16px}
+    .btn:hover{filter:brightness(1.05)}
+
+    /* right card */
+    .hero-right{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .hero-right img{width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:12px}
+    .principle{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px}
+    .principle i{color:var(--orange);font-size:20px;margin-top:4px}
+    .principle .txt strong{color:var(--white);display:block}
+    .capture{background:var(--glass);padding:12px;border-radius:10px;margin-top:14px;border:1px solid rgba(255,255,255,0.02)}
+
+    /* products grid */
+    .section{margin-top:40px}
+    h2.section-title{font-family:'Playfair Display', serif;color:var(--white);font-size:26px;margin:0 0 18px;display:inline-block}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);display:flex;flex-direction:column}
+    .card .img{height:150px;border-radius:8px;overflow:hidden;margin-bottom:12px}
+    .card .img img{width:100%;height:100%;object-fit:cover;display:block}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--orange);color:#000;font-weight:800;font-size:12px}
+    .price{color:var(--orange);font-weight:800;margin-top:8px}
+
+    /* testimonials */
+    .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+    @media(max-width:980px){.testimonials{grid-template-columns:1fr}}
+    .testi{background:var(--card);padding:14px;border-radius:10px;display:flex;gap:10px;align-items:flex-start;border-left:4px solid var(--orange)}
+    .testi img{width:56px;height:56px;border-radius:8px;object-fit:cover}
+    .testi p{margin:0;color:var(--muted);font-style:italic}
+
+    /* about */
+    .about{display:grid;grid-template-columns:160px 1fr;gap:18px;margin-top:28px;align-items:center;background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .about img{width:160px;height:160px;object-fit:cover;border-radius:12px;border:4px solid var(--orange)}
+    .about h3{margin:0;color:var(--orange);font-family:'Playfair Display',serif}
+
+    /* footer */
+    footer{margin-top:32px;padding:18px;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid rgba(255,255,255,0.03)}
+    footer a{color:var(--orange);text-decoration:none}
+
+    /* modal */
+    .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;z-index:9999}
+    .modal .box{background:#0f0f0f;padding:22px;border-radius:12px;max-width:720px;color:var(--white)}
+    .close{background:transparent;border:0;color:var(--muted);cursor:pointer;font-size:16px}
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo"><img src="assets/logo.png" alt="Economia & Finanças Insight - logo"></div>
+      <div>
+        <h1>Economia & Finanças Insight</h1>
+        <p class="muted">Materiais práticos para sair das dívidas, organizar seu orçamento e gerar renda extra.</p>
+
+        <div class="author" style="margin-top:10px">
+          <img src="assets/founder.png" alt="Francisco Neves - fundador">
+          <div class="meta">
+            <strong>Por: Francisco Neves</strong>
+            <small>Fundador • Tecnólogo em Gestão Financeira (Estácio de Sá)</small>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Seu controle financeiro começa aqui. Saia das dívidas — comece hoje.</h2>
+        <p class="lead">Planilhas, e-books e cursos com passos práticos, criados para pessoas que precisam agir rápido e sem complicação. Aplique, recupere o controle e gere espaço para lazer e tratamento emocional.</p>
+
+        <div class="cta-row">
+          <a class="btn" href="https://go.hotmart.com/U101462649K" target="_blank" rel="noopener">Baixar Planilha — R$ 19</a>
+          <a class="btn ghost" href="#produtos">Ver Produtos</a>
+          <a class="btn ghost" id="joinBtn" href="https://t.me/SEUGRUPO" target="_blank" rel="noopener">Entrar no Grupo</a>
+        </div>
+
+        <div class="capture">
+          <strong>Guia grátis:</strong>
+          <p class="muted" style="margin:8px 0 12px 0">Receba o PDF "Checklist — 5 ações para acelerar sua reserva".</p>
+
+          <form id="leadForm">
+            <input id="leadName" name="name" type="text" placeholder="Seu nome" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #333;background:#0a0a0a;color:#fff">
+            <input id="leadEmail" name="email" type="email" placeholder="seu@email.com" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #333;margin-top:10px;background:#0a0a0a;color:#fff">
+            <div style="display:flex;gap:8px;align-items:center;margin-top:10px">
+              <input id="leadConsent" type="checkbox" required>
+              <div class="muted">Concordo em receber comunicações e aceito a <a href="#policy" id="policyLink">política de privacidade</a>.</div>
+            </div>
+            <div style="margin-top:12px">
+              <button id="submitButton" class="btn" type="submit">Quero o PDF grátis</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="hero-right">
+        <div style="position:relative">
+          <!-- carrossel simples (estático, trocar imagens em assets/) -->
+          <img src="assets/hero1.jpg" alt="Capa finanças" style="width:100%;border-radius:8px;object-fit:cover;height:200px">
+        </div>
+
+        <div style="margin-top:12px">
+          <div class="principle"><i class="fas fa-bolt"></i><div class="txt"><strong>Passos rápidos</strong><small class="muted">Aplique hoje, veja resultados em semanas.</small></div></div>
+          <div class="principle"><i class="fas fa-hand-holding-heart"></i><div class="txt"><strong>Sem julgamentos</strong><small class="muted">Entendemos sua situação e criamos soluções práticas.</small></div></div>
+          <div class="principle"><i class="fas fa-users"></i><div class="txt"><strong>Comunidade</strong><small class="muted">Grupo exclusivo para compradores e apoiados.</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <img src="assets/founder.png" alt="Francisco Neves">
+      <div>
+        <h3>Sobre a Economia & Finanças Insight</h3>
+        <p class="muted">Na Economia & Finanças Insight ajudamos pessoas a sair das dívidas, organizar o orçamento e criar fontes de renda extra — com foco em ações simples e aplicáveis. Fundada por Francisco Neves (Tecnólogo em Gestão Financeira), a marca combina empatia com métodos práticos para resultados reais.</p>
+        <p class="muted"><strong>Missão:</strong> transformar medo financeiro em ações concretas e segurança emocional. <strong>Diferencial:</strong> materiais objetivos, acompanhamentos e comunidade ativa.</p>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="produtos" class="section">
+      <h2 class="section-title">Produtos em destaque</h2>
+
+      <div class="grid">
+        <!-- 1 -->
+        <div class="card">
+          <div class="img"><img src="assets/prod_planilha.jpg" alt="Planilha"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span class="badge">Autor</span>
+            <div class="muted">Planilha</div>
+          </div>
+          <h3>Planilha de Controle Financeiro Mensal</h3>
+          <p class="muted">Controle receitas, despesas e parcelas em um modelo prático e direto.</p>
+          <div class="price">R$ 19</div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="btn" href="https://go.hotmart.com/U101462649K" target="_blank">Baixar</a>
+            <a class="btn ghost" href="https://go.hotmart.com/U101462649K" target="_blank">Detalhes</a>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card">
+          <div class="img"><img src="assets/prod_ebook.jpg" alt="Ebook Como Sair das Dívidas"></div>
+          <span class="badge">Autor</span>
+          <h3>Como Sair das Dívidas em 6 Simples Passos</h3>
+          <p class="muted">Ebook prático para negociar, priorizar e reconstruir sua vida financeira.</p>
+          <div class="price">R$ 37</div>
+          <div style="margin-top:12px"><a class="btn" href="https://go.hotmart.com/B101486079V" target="_blank">Acessar Agora</a></div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card">
+          <div class="img"><img src="assets/prod_curso.jpg" alt="Princípios da Liberdade Financeira"></div>
+          <span class="badge">Autor</span>
+          <h3>Princípios da Liberdade Financeira</h3>
+          <p class="muted">Programa avançado para transformar disciplina em liberdade financeira.</p>
+          <div class="price">R$ 97</div>
+          <div style="margin-top:12px"><a class="btn" href="https://go.hotmart.com/L101489241G" target="_blank">Quero o Curso</a></div>
+        </div>
+      </div>
+
+      <!-- afiliados (lista reduzida) -->
+      <div style="margin-top:22px">
+        <h3 style="color:var(--white)">Produtos afiliados recomendados</h3>
+        <div class="grid" style="margin-top:12px">
+          <!-- repetir cards mais compactos -->
+          <div class="card">
+            <div class="img"><img src="assets/prod_planilha.jpg" alt=""></div>
+            <span class="badge" style="background:#666">Afiliado</span>
+            <h3>Segredos dos Investimentos para Iniciantes</h3>
+            <p class="muted">Curso introdutório de investimentos.</p>
+            <div style="margin-top:auto"><a class="btn ghost" href="https://go.hotmart.com/T102346928A" target="_blank">Ver oferta</a></div>
+          </div>
+
+          <div class="card">
+            <div class="img"><img src="assets/prod_ebook.jpg" alt=""></div>
+            <span class="badge" style="background:#666">Afiliado</span>
+            <h3>Método Multiplicai</h3>
+            <p class="muted">Método de geração de renda (nicho específico).</p>
+            <div style="margin-top:auto"><a class="btn ghost" href="https://go.hotmart.com/E102331801T" target="_blank">Ver oferta</a></div>
+          </div>
+
+          <div class="card">
+            <div class="img"><img src="assets/prod_curso.jpg" alt=""></div>
+            <span class="badge" style="background:#666">Afiliado</span>
+            <h3>TikTok Shop Sem Segredo</h3>
+            <p class="muted">Vendas pelo TikTok sem mistério.</p>
+            <div style="margin-top:auto"><a class="btn ghost" href="https://go.hotmart.com/K102360455C" target="_blank">Ver oferta</a></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section">
+      <h2 class="section-title">O que nossos clientes dizem</h2>
+
+      <div class="testimonials">
+        <div class="testi"><img src="assets/testi1.jpg" alt="Mariana"> <div><strong>Mariana, SP</strong><p class="muted">"Em 30 dias com a planilha rescatei R$420/m e negociei parcelas."</p></div></div>
+        <div class="testi"><img src="assets/testi2.jpg" alt="Carlos"> <div><strong>Carlos, DF</strong><p class="muted">"O passo a passo trouxe clareza e rotina ao meu orçamento."</p></div></div>
+        <div class="testi"><img src="assets/testi3.jpg" alt="Beatriz"> <div><strong>Beatriz, RJ</strong><p class="muted">"Objetivo e prático — já comecei a juntar minha reserva."</p></div></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <h2 class="section-title">Perguntas Frequentes</h2>
+      <div style="margin-top:12px">
+        <div style="background:var(--card);padding:12px;border-radius:10px;margin-bottom:8px"><strong>Como recebo o produto?</strong><p class="muted">Pelo Hotmart (link de download / acesso enviado por e-mail).</p></div>
+        <div style="background:var(--card);padding:12px;border-radius:10px;margin-bottom:8px"><strong>Garantia</strong><p class="muted">7 dias incondicionais — reembolso via Hotmart.</p></div>
+        <div style="background:var(--card);padding:12px;border-radius:10px"><strong>Suporte</strong><p class="muted">Suporte via e-mail e grupo fechado.</p></div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="max-width:900px;margin:0 auto">
+        <p class="muted">© 2025 Economia & Finanças Insight — Suporte: <a href="mailto:econofin.insight@gmail.com">econofin.insight@gmail.com</a></p>
+        <p class="muted">Política de Privacidade: Ao enviar dados no formulário você concorda com nossa <a href="#policy" id="policyFooter">política de privacidade</a>.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- MODAL (usado para confirmação e política) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="box">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h3 id="modalTitle">Título</h3>
+        <button class="close" id="closeModal">&times;</button>
+      </div>
+      <div id="modalBody" style="margin-top:8px;color:var(--muted)"></div>
+    </div>
+  </div>
+
+  <!-- política escondida (fallback) -->
+  <div id="policy" style="display:none">
+    <h2>Política de Privacidade — Economia & Finanças Insight</h2>
+    <p>Coletamos nome e e-mail para entregar materiais e enviar comunicações relacionadas aos produtos e serviços. Armazenamos consentimento para fins de conformidade com a LGPD. Você pode solicitar remoção a qualquer momento pelo e-mail econofin.insight@gmail.com.</p>
+    <p>Detalhes completos e contatos: econofin.insight@gmail.com</p>
+  </div>
+
+  <script>
+    (function(){
+      // --- FORM submission via webhook (Make/Brevo) ---
+      const WEBHOOK = 'https://hook.us2.make.com/6egvtn6fy8v44t30z76duenwjtk55psj'; // seu webhook
+      const form = document.getElementById('leadForm');
+      const modal = document.getElementById('modal');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalBody = document.getElementById('modalBody');
+      const closeModalBtn = document.getElementById('closeModal');
+
+      function openModal(title, html){
+        modalTitle.textContent = title;
+        modalBody.innerHTML = html;
+        modal.style.display = 'flex';
+        modal.setAttribute('aria-hidden','false');
+      }
+      function closeModal(){ modal.style.display = 'none'; modal.setAttribute('aria-hidden','true'); }
+
+      closeModalBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+
+      form.addEventListener('submit', async function(e){
+        e.preventDefault();
+        const name = document.getElementById('leadName').value.trim();
+        const email = document.getElementById('leadEmail').value.trim();
+        const consent = document.getElementById('leadConsent').checked;
+        if(!name || !email || !consent){ alert('Preencha nome, e-mail e aceite a política.'); return; }
+        const payload = {name, email, consent, source:'pagina_produtos', date:new Date().toISOString()};
+        try{
+          const resp = await fetch(WEBHOOK, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload) });
+          if(!resp.ok) throw new Error('Erro no envio');
+          openModal('Pronto!', '<p class="muted">Seu PDF foi solicitado — verifique seu e-mail em alguns minutos. Aproveite e entre no nosso grupo.</p>');
+          form.reset();
+        } catch(err){
+          console.error(err);
+          openModal('Erro', '<p class="muted">Não foi possível enviar agora. Envie e-mail para econofin.insight@gmail.com</p>');
+        }
+      });
+
+      // política clicável
+      const polLinks = [document.getElementById('policyLink'), document.getElementById('policyFooter')];
+      polLinks.forEach(function(el){
+        if(el) el.addEventListener('click', function(ev){
+          ev.preventDefault();
+          const policyHtml = document.getElementById('policy').innerHTML;
+          openModal('Política de Privacidade', policyHtml);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
